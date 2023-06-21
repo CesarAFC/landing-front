@@ -27,14 +27,10 @@ header {
 #menuToggle {
     display: none;
     position: relative;
-    /* right: 20px; */
-    /* top: 50px; */
-    /* left: 50px; */
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
   }
-
   #menuToggle input {
     display: block;
     width: 40px;
@@ -42,12 +38,9 @@ header {
     position: absolute;
     top: -7px;
     left: -5px;
-    
     cursor: pointer;
-    
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
-    
     -webkit-touch-callout: none;
   }
 #menuToggle span {
@@ -64,58 +57,47 @@ header {
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
-
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: var(--neutral-other-strong);
 }
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
 #menu
 {
   position: absolute;
-  left: 53px;
+  left: -50vw;
   width: 100vw;
-  /* margin: -100px 0 0 -50px; */
+  margin-left: -130px;
   padding: 22px;
-  /* padding-top: 125px; */
   cursor: pointer;
   background: #fff;
   color: var(--neutral-other-strong);
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
   
   transform-origin: 0% 0%;
-  /* transform: translate(-100%, 0); */
-  transform: none;
+  transform: translate(-100%, 0);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
 #menuToggle input:checked ~ ul
 {
-  transform: translate(-100%, 0);  
-  /* transform: none; */
+  transform: none;
 }
 
 /* ------------------------ */
@@ -239,17 +221,6 @@ header {
     text-align: center;
     z-index: 2;
   }
-  
-  /* .general-reasons ol li::after {
-    display: none;
-    content: "";
-    background-color: aquamarine;
-    position: absolute;
-    top: 0;
-    left: -22px;
-    width: 22px;
-    height: 43px;
-  } */
 .best-of-the-month {
     margin: 120px 0;
     display: flex;
@@ -293,7 +264,6 @@ header {
 .general-info h3 {
     font-size: 40px;
     font-weight: 700;
-    /* width: 480px; */
     width: 38%;
 }
 .secondary-button {
@@ -309,7 +279,6 @@ header {
 .secondary-button:hover {
     background-color: #B3B2B7;
     box-shadow: none;
-
 }
 
 footer {
@@ -393,11 +362,6 @@ footer p {
     .general-info {
         justify-content: center;
     }
-    /* .general-info > h2, 
-    .general-info > p,
-    .general-info > h3 {
-        width: 50%;
-    } */
     .best-of-the-month > section {
         flex-direction: column;
         align-items: center;
@@ -436,7 +400,6 @@ footer p {
     .intro img {
         max-width: 80%;
     }
-
     .general-info {
         flex-direction: column;
         background-color: #3CDDF3;
@@ -489,7 +452,6 @@ footer p {
         gap: 20px;
         padding-bottom: 40px;
     } */
-
     .redes-y-logo > div {
         display: flex;
         gap: 40px;
@@ -499,11 +461,6 @@ footer p {
     }
 }
 
-/* @media (width > 420px) {
-    .my-list-style {
-        width: 60%;
-    }
-} */
 @media (width <= 600px) {
     .intro {
         flex-direction: column;
