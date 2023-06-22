@@ -126,9 +126,10 @@ header {
 .action-button:hover {
     background-color: #8B48BFB2;
     box-shadow: none;
-
 }
-
+.short {
+    padding: 12px 16px;
+}
 .intro {
     padding: 95px 0;
     display: flex;
