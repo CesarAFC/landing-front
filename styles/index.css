@@ -27,8 +27,8 @@ header {
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
-  }
-  #menuToggle input {
+}
+#menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
@@ -39,7 +39,7 @@ header {
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
-  }
+}
 #menuToggle span {
   display: block;
   width: 33px;
@@ -91,7 +91,9 @@ header {
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
-
+#menu > li:hover {
+    color: #242E5299;
+}
 #menuToggle input:checked ~ ul
 {
   transform: none;
@@ -196,6 +198,7 @@ header {
     padding-bottom: 20px;
 }
 .my-list-style p {
+    text-align: left;
     font-weight: 400;
     color: #B3B2B7;
 }
@@ -378,7 +381,7 @@ footer p {
         padding-right: 0;
     }
 }
-@media (width <= 420px) {
+@media (width <= 480px) {
     .intro img {
         max-width: 80%;
     }
@@ -387,11 +390,11 @@ footer p {
         background-color: #3CDDF3;
     }
     .general-info > h2, 
-    .general-info > p,
-    .general-info > h3 {
+    .general-info > p {
         width: 90%;
     }
     .general-info > h3 {
+        width: 80%;
         text-align: center;
         padding: 0 50px;
     }
@@ -408,6 +411,7 @@ footer p {
         padding: 0;
     }
     .my-list-style  p {
+        padding-right: 45px;
         padding-top: 20px;
     }
     .general-reasons ol li::before {
