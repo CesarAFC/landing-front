@@ -373,7 +373,7 @@ footer p {
     footer > section {
         flex-direction: column-reverse;
         align-items: center;
-        gap: 30px;
+        gap: 35px;
     }
     .redes-y-logo {
         flex-direction: column-reverse;
@@ -449,6 +449,9 @@ footer p {
     }
     .menu-selection {
         gap: 80px;
+    }
+    footer form input[type='text'] {
+        width: 288px;
     }
 }
 @media (width <= 600px) {
