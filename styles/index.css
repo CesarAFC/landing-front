@@ -143,7 +143,7 @@ header {
 }
 .intro--information {
     padding: 20px;
-    max-width: 490px;
+    max-width: 530px;
     display: flex;
     gap: 28px;
     flex-direction: column;
@@ -154,6 +154,9 @@ header {
     font-size: 50px;
     font-weight: 700;
     color: var(--neutral-other-strong);
+}
+.only-for-mobile {
+    display: none;
 }
 
 .general-info {
@@ -199,6 +202,7 @@ header {
     padding-bottom: 20px;
 }
 .my-list-style p {
+    width: 85%;
     text-align: left;
     font-weight: 400;
     color: #B3B2B7;
@@ -386,6 +390,10 @@ footer p {
     .intro img {
         max-width: 80%;
     }
+    .intro--information > p {
+        width: 90%;
+    }
+    
     .general-info {
         flex-direction: column;
         background-color: #3CDDF3;
@@ -399,6 +407,12 @@ footer p {
         text-align: center;
         padding: 0 50px;
     }
+    .general-info p:nth-child(2) {
+        display: none;
+    }
+    .only-for-mobile {
+        display: block;
+    }
     .my-list-style {
         width: 100%;
     }
@@ -411,7 +425,8 @@ footer p {
     .best-of-the-month > section {
         padding: 0;
     }
-    .my-list-style  p {
+    .my-list-style p {
+        width: 100%;
         padding-right: 45px;
         padding-top: 20px;
     }
